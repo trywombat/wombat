@@ -30,6 +30,7 @@ URI     : https://colorlib.com
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
 
     <!-- start Mixpanel -->
     <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
@@ -118,15 +119,34 @@ mixpanel.init("492ecbc05f6b88fe1db3f1d2bbccbd7e");</script>
                 <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
                 <h2>Sign Up for Free</h2>
                 <p class="tagline">No more stress with submiting your tax return. Wombat links directly to your bank account and automatically completes your tax return, freeing you up to focus on your craft.</p>
-                <div class="row justify-content-sm-center">
-                  <script type="text/javascript" src="https://teamtolley23.formstack.com/forms/js.php/wombat"></script>
-                  <noscript>
-                    <a href="https://teamtolley23.formstack.com/forms/wombat" title="Online Form">Online Form - Wombat</a>
-                  </noscript>
+
+
+                <!-- FORM STUFF -->
+
+                <div class="form-container form-group">
+                    <div class="dummy-email-box">
+                        <form>
+                            <div class="dummy-label">
+                                What's your email?
+                                <span class="fsRequiredMarker">*</span>
+                            </div>
+                            <input type="email" name="email" class="dummy-email" placeholder="email@email.com"/>
+                        </form>
+                    </div>
+
+                    <div class="text-center">
+                        <script type="text/javascript" src="https://teamtolley23.formstack.com/forms/js.php/wombat"></script>
+                        <noscript>
+                          <a href="https://teamtolley23.formstack.com/forms/wombat" title="Online Form">Online Form - Wombat</a>
+                        </noscript>
+                    </div>
+
                 </div>
+
+                <!-- END FORM -->
+
              </div>
         </div>
-
     </div>
 
     <footer class="my-5 text-center">
